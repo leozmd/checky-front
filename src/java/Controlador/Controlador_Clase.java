@@ -12,6 +12,10 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet(name = "Controlador_Clase", urlPatterns = {"/Controlador_Clase"})
 public class Controlador_Clase extends HttpServlet {
 
+    
+    String listar="admin_clases.jsp";
+    String add="admin_nueva_clase.jsp";
+    String edit="admin_editar_clase.jsp";
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");

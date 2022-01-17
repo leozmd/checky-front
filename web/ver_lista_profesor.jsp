@@ -21,7 +21,6 @@
 </head>
 
 <body style="background: #F3EFF5;width: 100%;height: 100%;">
-    <header class="d-flex d-lg-flex justify-content-center align-items-center justify-content-lg-center align-items-lg-center" style="background: #3F7D20;"><img src="assets/img/logo-l.png" style="width: 120px;margin: 15px;"></header>
     <div class="container d-lg-flex flex-column justify-content-lg-center align-items-lg-center" style="width: 100%;height: 100%;">
         <h1 style="height: auto;margin-bottom: 4%;color: #3F7D20;font-family: 'Red Hat Display', sans-serif;">Pase de lista</h1>
         <h1 style="height: auto;font-family: 'IBM Plex Mono', monospace;">x25js6lI34</h1>

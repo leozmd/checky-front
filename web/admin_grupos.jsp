@@ -1,3 +1,7 @@
+<%@page import="java.util.Iterator"%>
+<%@page import="Modelo.Grupo"%>
+<%@page import="java.util.List"%>
+<%@page import="ModeloDAO.GrupoDAO"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -47,18 +51,29 @@
                     <thead style="border-bottom-width: 2px;border-bottom-color: #3F7D20;">
                         <tr style="background: #3F7D20;border-bottom-color: #3F7D20;color: rgb(222,226,230);font-family: 'Red Hat Display', sans-serif;">
                             <th>Nombre</th>
-                            <th>NÃºmero de clases</th>
+                            <th>Número de clases</th>
                             <th>Acciones</th>
                         </tr>
                     </thead>
                     <tbody>
+                        <%
+                    
+                        GrupoDAO dao = new GrupoDAO();
+                        List<Grupo>list = dao.listar();
+                        Iterator<Grupo>iter = list.iterator();
+                        Grupo gru = null;
+                        while (iter.hasNext()){
+                            gru = iter.next();
+                        
+                        %>
                         <tr style="background: #d2d2d2;">
-                            <td>7</td>
-                            <td>58</td>
+                            <td><% gru.getTipoGrupo(); %></td>
+                            <td><% gru.getNumClases(); %></td>
                             <td>
                                 <form><button class="btn btn-warning border-dark" type="submit" style="margin-right: 2%;">Editar</button><button class="btn btn-danger border-light" type="submit">Eliminar</button></form>
                             </td>
                         </tr>
+                        <% } %>
                     </tbody>
                 </table>
             </div>

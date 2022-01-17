@@ -1,3 +1,7 @@
+<%@page import="java.util.Iterator"%>
+<%@page import="Modelo.Rol"%>
+<%@page import="java.util.List"%>
+<%@page import="ModeloDAO.RolDAO"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -47,14 +51,25 @@
                     <thead style="border-bottom-width: 2px;border-bottom-color: #3F7D20;">
                         <tr style="background: #3F7D20;border-bottom-color: #3F7D20;color: rgb(222,226,230);font-family: 'Red Hat Display', sans-serif;">
                             <th>Nombre</th>
-                            <th>NÃºmero de usuarios</th>
+                            <th>Número de usuarios</th>
                         </tr>
                     </thead>
                     <tbody>
+                        <%
+                    
+                        RolDAO dao = new RolDAO();
+                        List<Rol>list = dao.listar();
+                        Iterator<Rol>iter = list.iterator();
+                        Rol rol = null;
+                        while (iter.hasNext()){
+                            rol = iter.next();
+                        
+                        %>
                         <tr style="background: #d2d2d2;">
-                            <td>Estudiante</td>
-                            <td>58</td>
+                            <td><% rol.getTipoRol(); %></td>
+                            <td><% rol.getNumUsuarios(); %></td>
                         </tr>
+                        <% } %>
                     </tbody>
                 </table>
             </div>

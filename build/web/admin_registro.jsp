@@ -1,3 +1,7 @@
+<%@page import="java.util.Iterator"%>
+<%@page import="Modelo.Registro"%>
+<%@page import="java.util.List"%>
+<%@page import="ModeloDAO.RegistroDAO"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -48,17 +52,28 @@
                         <tr style="background: #3F7D20;border-bottom-color: #3F7D20;color: rgb(222,226,230);font-family: 'Red Hat Display', sans-serif;">
                             <th>Usuario</th>
                             <th>Rol</th>
-                            <th>Acción</th>
+                            <th>Acci�n</th>
                             <th>Fecha y hora</th>
                         </tr>
                     </thead>
                     <tbody>
+                        <%
+                    
+                        RegistroDAO dao = new RegistroDAO();
+                        List<Registro>list = dao.listar();
+                        Iterator<Registro>iter = list.iterator();
+                        Registro reg = null;
+                        while (iter.hasNext()){
+                            reg = iter.next();
+                        
+                        %>
                         <tr style="background: #d2d2d2;">
-                            <td>pmartineza</td>
-                            <td>Administrador</td>
-                            <td>Iniciar sesión</td>
-                            <td>2-Febrero-2022 11:30:04</td>
+                            <td><% reg.getIdUsuario(); %></td>
+                            <td><% reg.getIdRol(); %></td>
+                            <td><% reg.getTxtRegistro(); %></td>
+                            <td><% reg.getFecRegistro(); %></td>
                         </tr>
+                        <% } %>
                     </tbody>
                 </table>
             </div>

@@ -33,8 +33,6 @@
                         <th class="d-none">ID</th>
                         <th>Asunto</th>
                         <th>Clase</th>
-                        <th>Fecha y hora</th>
-                        <th>Estado</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -42,15 +40,11 @@
                         <td class="d-none">Cell 1</td>
                         <td>Cell 1</td>
                         <td>Cell 2</td>
-                        <td>Cell 3</td>
-                        <td>No leída</td>
                     </tr>
                     <tr style="background: #d2d2d2;">
                         <td class="d-none">Cell 1</td>
                         <td>Cell 1</td>
                         <td>Cell 2</td>
-                        <td>Cell 3</td>
-                        <td>Leída</td>
                     </tr>
                 </tbody>
             </table>

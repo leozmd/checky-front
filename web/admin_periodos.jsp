@@ -1,3 +1,7 @@
+<%@page import="java.util.Iterator"%>
+<%@page import="Modelo.Periodo"%>
+<%@page import="java.util.List"%>
+<%@page import="ModeloDAO.PeriodoDAO"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -53,14 +57,25 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <%
+                    
+                        PeriodoDAO dao = new PeriodoDAO();
+                        List<Periodo>list = dao.listar();
+                        Iterator<Periodo>iter = list.iterator();
+                        Periodo per = null;
+                        while (iter.hasNext()){
+                            per = iter.next();
+                        
+                        %>
                         <tr style="background: #d2d2d2;">
-                            <td>1er Parcial</td>
-                            <td>31-Enero-2022</td>
-                            <td>28-Febrero-2022</td>
+                            <td><% per.getNomPeriodo(); %></td>
+                            <td><% per.getIniPeriodo(); %></td>
+                            <td><% per.getFinPeriodo(); %></td>
                             <td>
                                 <form><button class="btn btn-warning border-dark" type="submit" style="margin-right: 2%;">Editar</button><button class="btn btn-danger border-light" type="submit">Eliminar</button></form>
                             </td>
                         </tr>
+                        <% } %>
                     </tbody>
                 </table>
             </div>

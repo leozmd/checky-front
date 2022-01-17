@@ -6,7 +6,6 @@ package ModeloDAO;
 
 import Config.conexion;
 import Interfaces.CRUD_Turno;
-import Modelo.Respuesta;
 import Modelo.Turno;
 import java.sql.Connection;
 import java.sql.PreparedStatement;

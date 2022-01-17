@@ -21,7 +21,6 @@
     </head>
 
     <body class="d-lg-flex flex-column justify-content-center align-content-center align-self-center align-items-lg-center" style="background: #F3EFF5;text-align: center;">
-        <header class="d-flex d-lg-flex justify-content-center align-items-center justify-content-lg-center align-items-lg-center" style="background: #3F7D20;width: 100%;"><img src="assets/img/logo-l.png" style="width: 120px;margin: 15px;"></header>
         <div class="container d-lg-flex d-xl-flex flex-column align-items-lg-center justify-content-xl-center align-items-xl-center" style="width: 100%;">
             <h1 style="font-family: 'Red Hat Text', sans-serif;font-weight: bold;color: #3F7D20;margin-top: 5%;">Nueva pregunta</h1>
             <form class="text-start" method="post" style="width: 90%;color: #72B01D;font-family: 'Red Hat Text', sans-serif;margin-top: 7%;font-size: 24px;text-align: left;">

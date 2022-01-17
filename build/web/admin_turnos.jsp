@@ -1,3 +1,7 @@
+<%@page import="java.util.Iterator"%>
+<%@page import="Modelo.Turno"%>
+<%@page import="java.util.List"%>
+<%@page import="ModeloDAO.TurnoDAO"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -47,14 +51,24 @@
                     <thead style="border-bottom-width: 2px;border-bottom-color: #3F7D20;">
                         <tr style="background: #3F7D20;border-bottom-color: #3F7D20;color: rgb(222,226,230);font-family: 'Red Hat Display', sans-serif;">
                             <th>Nombre</th>
-                            <th>NÃºmero de clases</th>
+                            <th>Número de clases</th>
                             <th>Acciones</th>
                         </tr>
                     </thead>
                     <tbody>
+                        <%
+                    
+                        TurnoDAO dao = new TurnoDAO();
+                        List<Turno>list = dao.listar();
+                        Iterator<Turno>iter = list.iterator();
+                        Turno tur = null;
+                        while (iter.hasNext()){
+                            tur = iter.next();
+                        
+                        %>
                         <tr style="background: #d2d2d2;">
-                            <td>Vespertino</td>
-                            <td>58</td>
+                            <td><% tur.getNomTurno(); %></td>
+                            <td><% tur.getNumClases(); %></td>
                             <td>
                                 <form><button class="btn btn-warning border-dark" type="submit" style="margin-right: 2%;">Editar</button><button class="btn btn-danger border-light" type="submit">Eliminar</button></form>
                             </td>

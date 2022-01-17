@@ -56,7 +56,9 @@
                             <th>Acciones</th>
                         </tr>
                     </thead>
-                    <%
+                    
+                    <tbody>
+                        <%
                     
                         AsignaturaDAO dao = new AsignaturaDAO();
                         List<Asignatura>list = dao.listar();
@@ -64,10 +66,8 @@
                         Asignatura asig = null;
                         while (iter.hasNext()){
                             asig = iter.next();
-                        }
                     
-                    %>
-                    <tbody>
+                        %>
                         <tr style="background: #d2d2d2;">
                             <td><% asig.getNombre(); %></td>
                             <td><% asig.getClav(); %></td>
@@ -81,6 +81,7 @@
                                 </a>
                             </td>
                         </tr>
+                        <% } %>
                     </tbody>
                 </table>
             </div>

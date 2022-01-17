@@ -21,7 +21,6 @@
 </head>
 
 <body style="background: #F3EFF5;border-width: 0px;">
-    <div class="d-flex d-lg-flex justify-content-center align-items-center justify-content-lg-center align-items-lg-center" style="background: #3F7D20;"><img src="assets/img/logo-l.png" style="width: 120px;margin: 15px;"></div>
     <div>
         <section style="margin-top: 4%;margin-bottom: 4%;">
             <div class="container">

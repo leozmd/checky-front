@@ -1,3 +1,7 @@
+<%@page import="ModeloDAO.ClaseDAO"%>
+<%@page import="java.util.Iterator"%>
+<%@page import="java.util.List"%>
+<%@page import="Modelo.Clase"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -56,17 +60,35 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <%
+                    
+                        ClaseDAO dao = new ClaseDAO();
+                        List<Clase>list = dao.listar();
+                        Iterator<Clase>iter = list.iterator();
+                        Clase clas = null;
+                        while (iter.hasNext()){
+                            clas = iter.next();
+                        
+                        %>
                         <tr style="background: #d2d2d2;">
-                            <td>Cálculo Diferencial</td>
-                            <td>Programación</td>
-                            <td>Quinto</td>
-                            <td>Vespertino</td>
-                            <td>7</td>
-                            <td>50</td>
+                            <td><% clas.getNomAsignatura(); %></td>
+                            <td><% clas.getNomCarrera(); %></td>
+                            <td><% clas.getTipoGrado(); %></td>
+                            <td><% clas.getNomTurno(); %></td>
+                            <td><% clas.getTipoGrupo(); %></td>
+                            <% 
+
+                            int numAlumnos = clas.getNumEstudiantes();
+                            int numDocentes = clas.getNumDocentes();
+                            int numMiembros = numAlumnos + numDocentes;
+                            
+                            %>
+                            <td><% System.out.println(numMiembros); %></td>
                             <td>
                                 <form class="d-lg-flex align-items-lg-center"><button class="btn btn-success border-light" type="submit" style="margin-right: 2%;">Ver</button><button class="btn btn-warning border-dark" type="submit" style="margin-right: 2%;">Editar</button><button class="btn btn-danger border-light" type="submit">Eliminar</button></form>
                             </td>
                         </tr>
+                        <% } %>
                     </tbody>
                 </table>
             </div>

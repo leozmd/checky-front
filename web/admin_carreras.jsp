@@ -55,7 +55,8 @@
                             <th>Acciones</th>
                         </tr>
                     </thead>
-                    <%
+                    <tbody>
+                        <%
                     
                         CarreraDAO dao = new CarreraDAO();
                         List<Carrera>list = dao.listar();
@@ -63,10 +64,8 @@
                         Carrera car = null;
                         while (iter.hasNext()){
                             car = iter.next();
-                        }
                         
-                    %>
-                    <tbody>
+                        %>
                         <tr style="background: #d2d2d2;">
                             <td><% car.getNombre(); %></td>
                             <td><% car.getNumClases(); %></td>
@@ -74,6 +73,7 @@
                                 <a><button class="btn btn-warning border-dark" type="button" style="margin-right: 2%;">Editar</button></a><a><button class="btn btn-danger border-light" type="button">Eliminar</button></a>
                             </td>
                         </tr>
+                        <% } %>
                     </tbody>
                 </table>
             </div>

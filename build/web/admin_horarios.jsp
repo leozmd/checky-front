@@ -1,3 +1,7 @@
+<%@page import="java.util.Iterator"%>
+<%@page import="Modelo.Horario"%>
+<%@page import="java.util.List"%>
+<%@page import="ModeloDAO.HorarioDAO"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -46,13 +50,23 @@
                 <table class="table">
                     <thead style="border-bottom-width: 2px;border-bottom-color: #3F7D20;">
                         <tr style="background: #3F7D20;border-bottom-color: #3F7D20;color: rgb(222,226,230);font-family: 'Red Hat Display', sans-serif;">
-                            <th>DÃ­a</th>
+                            <th>Dí­a</th>
                             <th>Hora de inicio</th>
                             <th>Hora de fin</th>
                             <th>Acciones</th>
                         </tr>
                     </thead>
                     <tbody>
+                        <%
+                    
+                        HorarioDAO dao = new HorarioDAO();
+                        List<Horario>list = dao.listar();
+                        Iterator<Horario>iter = list.iterator();
+                        Horario hor = null;
+                        while (iter.hasNext()){
+                            hor = iter.next();
+                        
+                        %>
                         <tr style="background: #d2d2d2;">
                             <td>Lunes</td>
                             <td>07:00</td>
@@ -61,6 +75,7 @@
                                 <form><button class="btn btn-warning border-dark" type="submit" style="margin-right: 2%;">Editar</button><button class="btn btn-danger border-light" type="submit">Eliminar</button></form>
                             </td>
                         </tr>
+                        <% } %>
                     </tbody>
                 </table>
             </div>

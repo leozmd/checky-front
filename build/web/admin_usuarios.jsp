@@ -59,7 +59,9 @@
                             <th>Acciones</th>
                         </tr>
                     </thead>
-                    <%
+                    
+                    <tbody>
+                        <%
                     
                         UsuarioDAO dao = new UsuarioDAO();
                         List<Usuario>list = dao.listar();
@@ -67,10 +69,8 @@
                         Usuario user = null;
                         while (iter.hasNext()){
                             user = iter.next();
-                        }
                     
-                    %>
-                    <tbody>
+                        %>
                         <tr style="background: #d2d2d2;">
                             <td><% user.getId(); %></td>
                             <td><% user.getNombre(); %></td>
@@ -87,6 +87,7 @@
                                 </a>
                             </td>
                         </tr>
+                        <% } %>
                     </tbody>
                 </table>
             </div>

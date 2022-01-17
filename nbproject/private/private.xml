@@ -3,21 +3,20 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/leonardo/NetBeansProjects/checky/src/java/Modelo/Periodo.java</file>
-            <file>file:/home/leonardo/NetBeansProjects/checky/src/java/Modelo/Estudiante.java</file>
-            <file>file:/home/leonardo/NetBeansProjects/checky/src/java/Modelo/Pregunta.java</file>
-            <file>file:/home/leonardo/NetBeansProjects/checky/src/java/Modelo/Registro.java</file>
-            <file>file:/home/leonardo/NetBeansProjects/checky/src/java/Modelo/Turno.java</file>
-            <file>file:/home/leonardo/NetBeansProjects/checky/src/java/Modelo/Rol.java</file>
-            <file>file:/home/leonardo/NetBeansProjects/checky/src/java/Modelo/Respuesta.java</file>
-            <file>file:/home/leonardo/NetBeansProjects/checky/src/java/Modelo/Estado.java</file>
-            <file>file:/home/leonardo/NetBeansProjects/checky/src/java/Modelo/Admin_Inicio.java</file>
-            <file>file:/home/leonardo/NetBeansProjects/checky/src/java/Modelo/Docente.java</file>
-            <file>file:/home/leonardo/NetBeansProjects/checky/src/java/Modelo/Asistencia.java</file>
-            <file>file:/home/leonardo/NetBeansProjects/checky/src/java/Modelo/Horario.java</file>
-            <file>file:/home/leonardo/NetBeansProjects/checky/src/java/Modelo/Grupo.java</file>
-            <file>file:/home/leonardo/NetBeansProjects/checky/src/java/Modelo/Usuario.java</file>
-            <file>file:/home/leonardo/NetBeansProjects/checky/src/java/Modelo/Grado.java</file>
+            <file>file:/home/leonardo/NetBeansProjects/checky/web/admin_turnos.jsp</file>
+            <file>file:/home/leonardo/NetBeansProjects/checky/web/admin_grupos.jsp</file>
+            <file>file:/home/leonardo/NetBeansProjects/checky/web/admin_roles.jsp</file>
+            <file>file:/home/leonardo/NetBeansProjects/checky/web/clase.jsp</file>
+            <file>file:/home/leonardo/NetBeansProjects/checky/web/admin_horarios.jsp</file>
+            <file>file:/home/leonardo/NetBeansProjects/checky/web/admin_usuarios.jsp</file>
+            <file>file:/home/leonardo/NetBeansProjects/checky/web/admin_carreras.jsp</file>
+            <file>file:/home/leonardo/NetBeansProjects/checky/web/admin_estados.jsp</file>
+            <file>file:/home/leonardo/NetBeansProjects/checky/web/admin_registro.jsp</file>
+            <file>file:/home/leonardo/NetBeansProjects/checky/web/admin_asignaturas.jsp</file>
+            <file>file:/home/leonardo/NetBeansProjects/checky/web/admin_grados.jsp</file>
+            <file>file:/home/leonardo/NetBeansProjects/checky/web/admin_periodos.jsp</file>
+            <file>file:/home/leonardo/NetBeansProjects/checky/web/admin_inicio.jsp</file>
+            <file>file:/home/leonardo/NetBeansProjects/checky/web/admin_clases.jsp</file>
         </group>
     </open-files>
 </project-private>

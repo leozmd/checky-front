@@ -21,7 +21,6 @@
 </head>
 
 <body style="background: #F3EFF5;">
-    <header class="d-flex d-lg-flex justify-content-center align-items-center justify-content-lg-center align-items-lg-center" style="background: #3F7D20;"><img src="assets/img/logo-l.png" style="width: 120px;margin: 15px;"></header>
     <div class="container" style="margin-right: 0;margin-left: 0;padding-right: 0;padding-left: 0;">
         <div class="d-flex float-none d-lg-flex align-items-center align-items-sm-center align-items-lg-center" style="background: #C2E394;border-bottom-left-radius: 0;border-bottom-right-radius: 0;">
             <div style="width: 50%;margin-bottom: 2%;">
@@ -45,17 +44,13 @@
                 <table class="table">
                     <thead style="border-bottom-width: 2px;border-bottom-color: #3F7D20;">
                         <tr style="background: #3F7D20;border-bottom-color: #3F7D20;color: rgb(222,226,230);font-family: 'Red Hat Display', sans-serif;">
-                            <th>Asignación</th>
-                            <th>Fecha y hora</th>
-                            <th>Creada por:</th>
+                            <th>Asignaci�n</th>
                             <th>Acciones</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr style="background: #d2d2d2;">
                             <td>Pase de lista</td>
-                            <td>03-12-21 18:00:00</td>
-                            <td>Pedro Joaquín Arias Martinez</td>
                             <td>
                                 <form><input class="form-control d-none" type="text" readonly=""><button class="btn btn-success" type="submit" style="margin-right: 2%;">Ver</button><button class="btn btn-danger" type="submit">Eliminar</button></form>
                             </td>
