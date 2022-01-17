@@ -16,6 +16,58 @@
         <servlet-name>Logout</servlet-name>
         <servlet-class>Controlador.Logout</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Contolador_Admin_Inicio</servlet-name>
+        <servlet-class>Controlador.Contolador_Admin_Inicio</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Controlador_Asistencia</servlet-name>
+        <servlet-class>Controlador.Controlador_Asistencia</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Controlador_Estado</servlet-name>
+        <servlet-class>Controlador.Controlador_Estado</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Controlador_Grado</servlet-name>
+        <servlet-class>Controlador.Controlador_Grado</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Controlador_Grupo</servlet-name>
+        <servlet-class>Controlador.Controlador_Grupo</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Controlador_Horario</servlet-name>
+        <servlet-class>Controlador.Controlador_Horario</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Controlador_Miembro</servlet-name>
+        <servlet-class>Controlador.Controlador_Miembro</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Controlador_Periodo</servlet-name>
+        <servlet-class>Controlador.Controlador_Periodo</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Controlador_Pregunta</servlet-name>
+        <servlet-class>Controlador.Controlador_Pregunta</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Controlador_Registro</servlet-name>
+        <servlet-class>Controlador.Controlador_Registro</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Controlador_Respuesta</servlet-name>
+        <servlet-class>Controlador.Controlador_Respuesta</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Controlador_Rol</servlet-name>
+        <servlet-class>Controlador.Controlador_Rol</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Controlador_Turno</servlet-name>
+        <servlet-class>Controlador.Controlador_Turno</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Controlador</servlet-name>
         <url-pattern>/Controlador</url-pattern>
@@ -31,6 +83,58 @@
     <servlet-mapping>
         <servlet-name>Logout</servlet-name>
         <url-pattern>/Logout</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Contolador_Admin_Inicio</servlet-name>
+        <url-pattern>/Contolador_Admin_Inicio</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Controlador_Asistencia</servlet-name>
+        <url-pattern>/Controlador_Asistencia</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Controlador_Estado</servlet-name>
+        <url-pattern>/Controlador_Estado</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Controlador_Grado</servlet-name>
+        <url-pattern>/Controlador_Grado</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Controlador_Grupo</servlet-name>
+        <url-pattern>/Controlador_Grupo</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Controlador_Horario</servlet-name>
+        <url-pattern>/Controlador_Horario</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Controlador_Miembro</servlet-name>
+        <url-pattern>/Controlador_Miembro</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Controlador_Periodo</servlet-name>
+        <url-pattern>/Controlador_Periodo</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Controlador_Pregunta</servlet-name>
+        <url-pattern>/Controlador_Pregunta</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Controlador_Registro</servlet-name>
+        <url-pattern>/Controlador_Registro</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Controlador_Respuesta</servlet-name>
+        <url-pattern>/Controlador_Respuesta</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Controlador_Rol</servlet-name>
+        <url-pattern>/Controlador_Rol</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Controlador_Turno</servlet-name>
+        <url-pattern>/Controlador_Turno</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
