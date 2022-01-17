@@ -23,18 +23,18 @@
 <body>
     <header class="d-lg-flex align-items-lg-center" style="color: var(--bs-white);height: 54px;background: #3f7d20;">
         <nav class="navbar navbar-light navbar-expand-lg navigation-clean-button" style="background: transparent;height: 100%;width: 100%;font-family: 'Red Hat Text', sans-serif;color: var(--bs-body-bg);padding: 15px 0px;padding-top: 16px;">
-            <div class="container"><a class="navbar-brand" href="#" style="font-family: 'Red Hat Display', sans-serif;">Administrador</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="container"><a class="navbar-brand" href="Controlador_Admin_Inicio?accion=listar" style="font-family: 'Red Hat Display', sans-serif;">Administrador</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navcol-1">
                     <ul class="navbar-nav me-auto">
-                        <li class="nav-item"><a class="nav-link" href="#" style="color: var(--bs-gray-400);">Inicio</a></li>
-                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#" style="color: var(--bs-gray-400);">Menú Usuarios</a>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="#">Ver usuarios</a><a class="dropdown-item" href="#">Ver roles</a><a class="dropdown-item" href="#">Ver estados</a></div>
+                        <li class="nav-item"><a class="nav-link" href="Controlador_Admin_Inicio?accion=listar" style="color: var(--bs-gray-400);">Inicio</a></li>
+                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#" style="color: var(--bs-gray-400);">Men� Usuarios</a>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="Controlador_Usuario?accion=listar">Ver usuarios</a><a class="dropdown-item" href="Controlador_Rol?accion=listar">Ver roles</a><a class="dropdown-item" href="Controlador_Estado?accion=listar">Ver estados</a></div>
                         </li>
-                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#" style="color: var(--bs-gray-400);">Menú Clases</a>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="#">Ver clases</a><a class="dropdown-item" href="#">Ver carreras</a><a class="dropdown-item" href="#">Ver turnos</a><a class="dropdown-item" href="#">Ver grupos</a><a class="dropdown-item" href="#">Ver asignaturas</a><a class="dropdown-item" href="#">Ver periodos</a></div>
+                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#" style="color: var(--bs-gray-400);">Men� Clases</a>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="Controlador_Clase?accion=listar">Ver clases</a><a class="dropdown-item" href="Controlador_Carrera?accion=listar">Ver carreras</a><a class="dropdown-item" href="Controlador_Turno?accion=listar">Ver turnos</a><a class="dropdown-item" href="Controlador_Grupo?accion=listar">Ver grupos</a><a class="dropdown-item" href="Controlador_Asignatura?accion=listar">Ver asignaturas</a><a class="dropdown-item" href="Controlador_Periodo?accion=listar">Ver periodos</a></div>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="#" style="color: var(--bs-gray-400);">Registro de actividad</a></li>
-                    </ul><span class="navbar-text actions" style="color: var(--bs-gray-400);"> <a class="login" href="#" style="color: var(--bs-gray-400);">Cerrar sesión</a></span>
+                        <li class="nav-item"><a class="nav-link" href="Controlador_Registro?accion=listar" style="color: var(--bs-gray-400);">Registro de actividad</a></li>
+                    </ul><span class="navbar-text actions" style="color: var(--bs-gray-400);"> <a class="login" href="Logout" style="color: var(--bs-gray-400);">Cerrar sesi�n</a></span>
                 </div>
             </div>
         </nav>
@@ -43,12 +43,17 @@
         <div class="d-lg-flex flex-column justify-content-lg-center align-items-lg-center" style="width: 90%;font-family: 'Red Hat Text', sans-serif;">
             <h1 style="margin-top: 2%;font-family: 'Red Hat Display', sans-serif;font-weight: bold;color: #3F7D20;margin-bottom: 0;">Nuevo usuario</h1>
             <form class="text-start" method="post" style="width: 75%;color: #72B01D;font-family: 'Red Hat Text', sans-serif;margin-top: 2%;font-size: 24px;text-align: left;"><label class="form-label" for="name">Nombre completo:</label>
-                <div class="input-group"><input class="form-control" type="text" name="name" placeholder="Nombre(s)"><input class="form-control" type="text" placeholder="Apellido paterno" name="appat"><input class="form-control" type="text" placeholder="Apellido materno" name="apmat"></div><label class="form-label" for="user" style="margin-top: 3%;">Usuario:</label><input class="form-control" type="text" name="user" placeholder="Ingrese un nombre de usuario"><label class="form-label" for="user" style="margin-top: 3%;">Rol:</label><select class="form-select">
+                <div class="input-group"><input class="form-control" type="text" name="name" placeholder="Nombre(s)"><input class="form-control" type="text" placeholder="Apellido paterno" name="appat"><input class="form-control" type="text" placeholder="Apellido materno" name="apmat"></div><label class="form-label" for="user" style="margin-top: 3%;">Usuario:</label><input class="form-control" type="text" name="user" placeholder="Ingrese un nombre de usuario"><label class="form-label" for="user" style="margin-top: 3%;">Matrícula:</label><input class="form-control" type="text" name="user" placeholder="Ingrese la matrícula"><label class="form-label" for="user" style="margin-top: 3%;">Sexo:</label><select class="form-select">
+                    <optgroup label="Seleccionar sexo">
+                        <option value="Masculino" selected="">Masculino</option>
+                        <option value="Femenino" selected="">Femenino</option>
+                    </optgroup>
+                </select><label class="form-label" for="user" style="margin-top: 3%;">Rol:</label><select class="form-select">
                     <optgroup label="Seleccionar rol">
                         <option value="" selected="">Rol</option>
                     </optgroup>
                 </select><label class="form-label" for="pass" style="margin-bottom: 0;margin-top: 3%;">Contraseña:</label><input class="form-control" type="password" placeholder="Ingresa una contraseña" name="pass" required=""><label class="form-label" for="cpass" style="margin-bottom: 0;margin-top: 3%;">Confirmar contraseña:</label><input class="form-control" type="password" placeholder="Confirma la contraseña" name="cpass" required="">
-                <div class="d-sm-flex d-lg-flex justify-content-sm-center justify-content-lg-center"><button class="btn btn-primary border rounded-pill" type="submit" style="font-family: 'Red Hat Text', sans-serif;background: #3F7D20;border-color: #3F7D20;height: 71px;font-size: 24px;border-radius: 100;color: #F3EFF5;margin-top: 8%;">Registrarse como super administrador</button></div>
+                <div class="d-sm-flex d-lg-flex justify-content-sm-center justify-content-lg-center"><button class="btn btn-primary border rounded-pill" type="submit" style="font-family: 'Red Hat Text', sans-serif;background: #3F7D20;border-color: #3F7D20;height: 71px;font-size: 24px;border-radius: 100;color: #F3EFF5;margin-top: 8%;">Dar de alta</button></div>
             </form>
         </div>
     </main>

@@ -21,20 +21,20 @@
 </head>
 
 <body class="d-lg-flex flex-column justify-content-center align-content-center align-self-center align-items-lg-center" style="background: #F3EFF5;text-align: center;">
-    <header class="d-lg-flex align-items-lg-center" style="color: var(--bs-white);height: 54px;background: #3f7d20;width: 100%;">
+    <header class="d-lg-flex align-items-lg-center" style="color: var(--bs-white);height: 54px;background: #3f7d20;">
         <nav class="navbar navbar-light navbar-expand-lg navigation-clean-button" style="background: transparent;height: 100%;width: 100%;font-family: 'Red Hat Text', sans-serif;color: var(--bs-body-bg);padding: 15px 0px;padding-top: 16px;">
-            <div class="container"><a class="navbar-brand" href="#" style="font-family: 'Red Hat Display', sans-serif;">Administrador</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="container"><a class="navbar-brand" href="Controlador_Admin_Inicio?accion=listar" style="font-family: 'Red Hat Display', sans-serif;">Administrador</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navcol-1">
                     <ul class="navbar-nav me-auto">
-                        <li class="nav-item"><a class="nav-link" href="#" style="color: var(--bs-gray-400);">Inicio</a></li>
-                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#" style="color: var(--bs-gray-400);">MenÃº Usuarios</a>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="#">Ver usuarios</a><a class="dropdown-item" href="#">Ver roles</a><a class="dropdown-item" href="#">Ver estados</a></div>
+                        <li class="nav-item"><a class="nav-link" href="Controlador_Admin_Inicio?accion=listar" style="color: var(--bs-gray-400);">Inicio</a></li>
+                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#" style="color: var(--bs-gray-400);">Menú Usuarios</a>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="Controlador_Usuario?accion=listar">Ver usuarios</a><a class="dropdown-item" href="Controlador_Rol?accion=listar">Ver roles</a><a class="dropdown-item" href="Controlador_Estado?accion=listar">Ver estados</a></div>
                         </li>
-                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#" style="color: var(--bs-gray-400);">MenÃº Clases</a>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="#">Ver clases</a><a class="dropdown-item" href="#">Ver carreras</a><a class="dropdown-item" href="#">Ver turnos</a><a class="dropdown-item" href="#">Ver grupos</a><a class="dropdown-item" href="#">Ver asignaturas</a><a class="dropdown-item" href="#">Ver periodos</a></div>
+                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#" style="color: var(--bs-gray-400);">Menú Clases</a>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="Controlador_Clase?accion=listar">Ver clases</a><a class="dropdown-item" href="Controlador_Carrera?accion=listar">Ver carreras</a><a class="dropdown-item" href="Controlador_Turno?accion=listar">Ver turnos</a><a class="dropdown-item" href="Controlador_Grupo?accion=listar">Ver grupos</a><a class="dropdown-item" href="Controlador_Asignatura?accion=listar">Ver asignaturas</a><a class="dropdown-item" href="Controlador_Periodo?accion=listar">Ver periodos</a></div>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="#" style="color: var(--bs-gray-400);">Registro de actividad</a></li>
-                    </ul><span class="navbar-text actions" style="color: var(--bs-gray-400);"> <a class="login" href="#" style="color: var(--bs-gray-400);">Cerrar sesiÃ³n</a></span>
+                        <li class="nav-item"><a class="nav-link" href="Controlador_Registro?accion=listar" style="color: var(--bs-gray-400);">Registro de actividad</a></li>
+                    </ul><span class="navbar-text actions" style="color: var(--bs-gray-400);"> <a class="login" href="Logout" style="color: var(--bs-gray-400);">Cerrar sesión</a></span>
                 </div>
             </div>
         </nav>

@@ -41,8 +41,8 @@
     </header>
     <main class="d-lg-flex justify-content-lg-center align-items-lg-center" style="height: 100%;">
         <div class="d-lg-flex flex-column justify-content-lg-center align-items-lg-center" style="width: 90%;font-family: 'Red Hat Text', sans-serif;">
-            <h1 style="margin-top: 2%;font-family: 'Red Hat Display', sans-serif;font-weight: bold;color: #3F7D20;margin-bottom: 0;">Nueva carrera</h1>
-            <form style="width: 70%;margin-top: 5%;"><label class="form-label" for="carrera">Nombre de la carrera</label><input class="form-control" type="text" name="carrera" placeholder="Ingresa el nombre de la carrera"><button class="btn btn-primary border rounded-pill" type="button" style="font-family: 'Red Hat Text', sans-serif;background: #3F7D20;border-color: #3F7D20;width: 210px;height: 71px;font-size: 24px;border-radius: 100;color: #F3EFF5;margin-top: 8%;">Crear</button></form>
+            <h1 style="margin-top: 2%;font-family: 'Red Hat Display', sans-serif;font-weight: bold;color: #3F7D20;margin-bottom: 0;">Editar carrera</h1>
+            <form style="width: 70%;margin-top: 5%;"><label class="form-label" for="carrera">Nombre de la carrera</label><input class="form-control" type="text" name="carrera" placeholder="Ingresa el nombre de la carrera"><button class="btn btn-primary border rounded-pill" type="button" style="font-family: 'Red Hat Text', sans-serif;background: #3F7D20;border-color: #3F7D20;width: 210px;height: 71px;font-size: 24px;border-radius: 100;color: #F3EFF5;margin-top: 8%;">Guardar</button></form>
         </div>
     </main>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>

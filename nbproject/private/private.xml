@@ -3,7 +3,21 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/leonardo/NetBeansProjects/checky/web/admin_editar_carrera.jsp</file>
+            <file>file:/home/leonardo/NetBeansProjects/checky/src/java/Modelo/Periodo.java</file>
+            <file>file:/home/leonardo/NetBeansProjects/checky/src/java/Modelo/Estudiante.java</file>
+            <file>file:/home/leonardo/NetBeansProjects/checky/src/java/Modelo/Pregunta.java</file>
+            <file>file:/home/leonardo/NetBeansProjects/checky/src/java/Modelo/Registro.java</file>
+            <file>file:/home/leonardo/NetBeansProjects/checky/src/java/Modelo/Turno.java</file>
+            <file>file:/home/leonardo/NetBeansProjects/checky/src/java/Modelo/Rol.java</file>
+            <file>file:/home/leonardo/NetBeansProjects/checky/src/java/Modelo/Respuesta.java</file>
+            <file>file:/home/leonardo/NetBeansProjects/checky/src/java/Modelo/Estado.java</file>
+            <file>file:/home/leonardo/NetBeansProjects/checky/src/java/Modelo/Admin_Inicio.java</file>
+            <file>file:/home/leonardo/NetBeansProjects/checky/src/java/Modelo/Docente.java</file>
+            <file>file:/home/leonardo/NetBeansProjects/checky/src/java/Modelo/Asistencia.java</file>
+            <file>file:/home/leonardo/NetBeansProjects/checky/src/java/Modelo/Horario.java</file>
+            <file>file:/home/leonardo/NetBeansProjects/checky/src/java/Modelo/Grupo.java</file>
+            <file>file:/home/leonardo/NetBeansProjects/checky/src/java/Modelo/Usuario.java</file>
+            <file>file:/home/leonardo/NetBeansProjects/checky/src/java/Modelo/Grado.java</file>
         </group>
     </open-files>
 </project-private>
