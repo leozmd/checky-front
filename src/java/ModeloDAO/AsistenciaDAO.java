@@ -5,9 +5,8 @@
 package ModeloDAO;
 
 import Config.conexion;
-import Interfaces.CRUD_Carrera;
-import Modelo.Admin_Inicio;
-import Modelo.Carrera;
+import Interfaces.CRUD_Asistencia;
+import Modelo.Asistencia;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -18,25 +17,25 @@ import java.util.List;
  *
  * @author leonardo
  */
-public class CarreraDAO implements CRUD_Carrera {
+public class AsistenciaDAO implements CRUD_Asistencia {
 
     conexion cn = new conexion();
     Connection con;
     PreparedStatement ps;
     ResultSet rs;
-    Carrera c = new Carrera();
+    Asistencia a = new Asistencia();
     
     @Override
     public List listar() {
         
-        ArrayList<Carrera>list = new ArrayList<>();
-        String sql = "SELECT * FROM checky.v_admin_carreras;";
+        ArrayList<Asistencia>list = new ArrayList<>();
+        String sql = "SELECT * FROM checky.DAsistencia;";
         try{
             con = cn.conexion();
             ps = con.prepareStatement(sql);
             rs = ps.executeQuery();
             while (rs.next()){
-                Admin_Inicio adm = new Admin_Inicio();
+                Asistencia asis = new Asistencia();
                                                
             }
         } catch (Exception e) {
@@ -47,17 +46,17 @@ public class CarreraDAO implements CRUD_Carrera {
     }
 
     @Override
-    public Carrera list(int id) {
+    public Asistencia list(int id) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     @Override
-    public boolean add(Carrera car) {
+    public boolean add(Asistencia asis) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     @Override
-    public boolean edit(Carrera car) {
+    public boolean edit(Asistencia asis) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 

@@ -1,16 +1,15 @@
 package Modelo;
 
-public class Estudiante {
+public class Miembro {
     int idClase;
-    int idAlumno;
-    int bolAlumno;
     int idUsuario;
     String nomUsuario;
     String appatUsuario;
     String apmatUsuario;
-    String sexoUsuario;
+    int idRol;
+    String tipoRol;
 
-    public Estudiante() {
+    public Miembro() {
     }
 
     public int getIdClase() {
@@ -19,22 +18,6 @@ public class Estudiante {
 
     public void setIdClase(int idClase) {
         this.idClase = idClase;
-    }
-
-    public int getIdAlumno() {
-        return idAlumno;
-    }
-
-    public void setIdAlumno(int idAlumno) {
-        this.idAlumno = idAlumno;
-    }
-
-    public int getBolAlumno() {
-        return bolAlumno;
-    }
-
-    public void setBolAlumno(int bolAlumno) {
-        this.bolAlumno = bolAlumno;
     }
 
     public int getIdUsuario() {
@@ -69,12 +52,20 @@ public class Estudiante {
         this.apmatUsuario = apmatUsuario;
     }
 
-    public String getSexoUsuario() {
-        return sexoUsuario;
+    public int getIdRol() {
+        return idRol;
     }
 
-    public void setSexoUsuario(String sexoUsuario) {
-        this.sexoUsuario = sexoUsuario;
+    public void setIdRol(int idRol) {
+        this.idRol = idRol;
+    }
+
+    public String getTipoRol() {
+        return tipoRol;
+    }
+
+    public void setTipoRol(String tipoRol) {
+        this.tipoRol = tipoRol;
     }
     
     

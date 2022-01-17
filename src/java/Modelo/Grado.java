@@ -12,6 +12,10 @@ public class Grado {
         this.numClases = numClases;
     }
 
+    public Grado() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
     public int getId() {
         return id;
     }

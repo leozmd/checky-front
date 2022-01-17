@@ -5,9 +5,8 @@
 package ModeloDAO;
 
 import Config.conexion;
-import Interfaces.CRUD_Carrera;
-import Modelo.Admin_Inicio;
-import Modelo.Carrera;
+import Interfaces.CRUD_Periodo;
+import Modelo.Periodo;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -18,25 +17,25 @@ import java.util.List;
  *
  * @author leonardo
  */
-public class CarreraDAO implements CRUD_Carrera {
+public class PeriodoDAO implements CRUD_Periodo {
 
     conexion cn = new conexion();
     Connection con;
     PreparedStatement ps;
     ResultSet rs;
-    Carrera c = new Carrera();
+    Periodo p = new Periodo();
     
     @Override
     public List listar() {
         
-        ArrayList<Carrera>list = new ArrayList<>();
-        String sql = "SELECT * FROM checky.v_admin_carreras;";
+        ArrayList<Periodo>list = new ArrayList<>();
+        String sql = "SELECT * FROM checky.Periodo;";
         try{
             con = cn.conexion();
             ps = con.prepareStatement(sql);
             rs = ps.executeQuery();
             while (rs.next()){
-                Admin_Inicio adm = new Admin_Inicio();
+                Periodo per = new Periodo();
                                                
             }
         } catch (Exception e) {
@@ -47,17 +46,17 @@ public class CarreraDAO implements CRUD_Carrera {
     }
 
     @Override
-    public Carrera list(int id) {
+    public Periodo list(int id) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     @Override
-    public boolean add(Carrera car) {
+    public boolean add(Periodo per) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     @Override
-    public boolean edit(Carrera car) {
+    public boolean edit(Periodo per) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
