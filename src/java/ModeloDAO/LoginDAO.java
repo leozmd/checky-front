@@ -5,69 +5,54 @@
 package ModeloDAO;
 
 import Config.conexion;
-import Interfaces.CRUD_Login;
-import Modelo.Carrera;
+import Interfaces.Validar_Login;
 import Modelo.Login;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.util.ArrayList;
-import java.util.List;
 
-/**
- *
- * @author leonardo
- */
-public class LoginDAO implements CRUD_Login{
-
-    conexion cn = new conexion();
+public class LoginDAO implements Validar_Login{
+    
     Connection con;
+    conexion cn = new conexion();
     PreparedStatement ps;
     ResultSet rs;
-    Carrera c = new Carrera();
-    
     int r = 0;
     
     @Override
-    public List listar() {
+    public int validar(Login user) {
         
-        ArrayList<Login>list = new ArrayList<>();
-        String sql = "SELECT * FROM checky.v_admin_usuarios WHERE nomUsuario = ? AND passUsuario = ?;";
-        try{
+        String sql = "SELECT * FROM v_login WHERE usuUsuario=? AND passUsuario =?";
+        
+        try {
             con = cn.conexion();
             ps = con.prepareStatement(sql);
+            ps.setString(1, user.getUser());
+            ps.setString(2, user.getPass());
             rs = ps.executeQuery();
-            while (rs.next()){
-                r = r+1;
-                Login cnt = new Login();
-                                               
+            if (rs.next()){
+                while (rs.next()){
+                    r=r+1;
+                    user.setId(rs.getInt("idUsuario"));
+                    user.setUser(rs.getString("usuUsuario"));
+                    user.setPass(rs.getString("passUsuario"));
+                    user.setRol(rs.getString("tipoRol"));                    
+                }
+                r = 1;
+                return 1;
+            } else {
+                r = 0;
+                return 0;
             }
-            
-            if (r == 1) {
-            
-                System.out.println("Acceso concedido");
-                
-            }
-            
-            else {
-                
-                response.sendRedirect("index.jsp");
-                
-                System.out.println("Acceso denegado");
-                
-            }
-            
             
         } catch (Exception e) {
-            
+        
         }
+        
+        
         
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
-
-    @Override
-    public Carrera list(int id) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-    
 }
+    
+
