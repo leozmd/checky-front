@@ -4,7 +4,7 @@
  */
 package ModeloDAO;
 
-import Config.conexion;
+import Config.Conexion;
 import Interfaces.CRUD_Carrera;
 import Modelo.Admin_Inicio;
 import Modelo.Carrera;
@@ -20,7 +20,7 @@ import java.util.List;
  */
 public class CarreraDAO implements CRUD_Carrera {
 
-    conexion cn = new conexion();
+    Conexion cn = new Conexion();
     Connection con;
     PreparedStatement ps;
     ResultSet rs;

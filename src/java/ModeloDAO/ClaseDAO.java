@@ -1,6 +1,6 @@
 package ModeloDAO;
 
-import Config.conexion;
+import Config.Conexion;
 import Interfaces.CRUD_Clase;
 import Modelo.Clase;
 import java.sql.Connection;
@@ -11,7 +11,7 @@ import java.util.List;
 
 public class ClaseDAO implements CRUD_Clase {
     
-    conexion cn = new conexion();
+    Conexion cn = new Conexion();
         Connection con;
         PreparedStatement ps;
         ResultSet rs;

@@ -1,6 +1,6 @@
 package ModeloDAO;
 
-import Config.conexion;
+import Config.Conexion;
 import Modelo.Asignatura;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -10,7 +10,7 @@ import java.util.List;
 
 public class AsignaturaDAO {
     
-    conexion cn = new conexion();
+    Conexion cn = new Conexion();
     Connection con;
     PreparedStatement ps;
     ResultSet rs;

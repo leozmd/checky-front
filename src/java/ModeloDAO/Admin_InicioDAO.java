@@ -4,7 +4,7 @@
  */
 package ModeloDAO;
 
-import Config.conexion;
+import Config.Conexion;
 import Interfaces.CRUD_Admin_Inicio;
 import Modelo.Admin_Inicio;
 import java.sql.Connection;
@@ -19,7 +19,7 @@ import java.util.List;
  */
 public class Admin_InicioDAO implements CRUD_Admin_Inicio {
 
-    conexion cn = new conexion();
+    Conexion cn = new Conexion();
     Connection con;
     PreparedStatement ps;
     ResultSet rs;

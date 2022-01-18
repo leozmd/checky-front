@@ -4,7 +4,7 @@
  */
 package ModeloDAO;
 
-import Config.conexion;
+import Config.Conexion;
 import Interfaces.CRUD_Notificacion;
 import Modelo.Notificacion;
 import java.sql.Connection;
@@ -19,7 +19,7 @@ import java.util.List;
  */
 public class NotificacionDAO implements CRUD_Notificacion {
     
-    conexion cn = new conexion();
+    Conexion cn = new Conexion();
     Connection con;
     PreparedStatement ps;
     ResultSet rs;

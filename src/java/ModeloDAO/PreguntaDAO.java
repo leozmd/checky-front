@@ -4,7 +4,7 @@
  */
 package ModeloDAO;
 
-import Config.conexion;
+import Config.Conexion;
 import Interfaces.CRUD_Pregunta;
 import Modelo.Pregunta;
 import java.sql.Connection;
@@ -19,7 +19,7 @@ import java.util.List;
  */
 public class PreguntaDAO implements CRUD_Pregunta {
 
-    conexion cn = new conexion();
+    Conexion cn = new Conexion();
     Connection con;
     PreparedStatement ps;
     ResultSet rs;

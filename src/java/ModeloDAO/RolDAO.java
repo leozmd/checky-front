@@ -4,7 +4,7 @@
  */
 package ModeloDAO;
 
-import Config.conexion;
+import Config.Conexion;
 import Interfaces.CRUD_Rol;
 import Modelo.Rol;
 import java.sql.Connection;
@@ -19,7 +19,7 @@ import java.util.List;
  */
 public class RolDAO implements CRUD_Rol {
 
-    conexion cn = new conexion();
+    Conexion cn = new Conexion();
     Connection con;
     PreparedStatement ps;
     ResultSet rs;

@@ -1,4 +1,6 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="javax.servlet.http.HttpSession"%>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -6,10 +8,11 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <% if (session.getAttribute("usuUsuario") == null || session.getAttribute("usuUsuario").equals("")) { %>
+        <% if (session.getAttribute("user") == null || session.getAttribute("user").equals("") ){; %>
         <h1>Sesión cerrada</h1>
         <% } else { %>
-        <h1>Sesión iniciada como <% request.getSession().getAttribute("usuUsuario"); %></h1>
+        <h1>Sesión iniciada</h1>
         <a href="Logout">Cerrar sesión</a>
+        <% } %>
     </body>
 </html>

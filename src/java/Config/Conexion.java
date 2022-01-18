@@ -4,7 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class conexion {
+public class Conexion {
     public String driver = "com.mysql.jdbc.Driver";
 
     public String database = "checky";
@@ -20,16 +20,16 @@ public class conexion {
     public String password = "Zamudio_3108";
 
     public Connection conexion() throws SQLException {
-        Connection conn = null;
+        Connection con = null;
 
         try {
             Class.forName(driver);
-            conn = DriverManager.getConnection(url, username, password);
+            con = DriverManager.getConnection(url, username, password);
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
         }
 
-        return conn;
+        return con;
     }
 
 }

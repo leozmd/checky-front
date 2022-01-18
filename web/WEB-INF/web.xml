@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
     <servlet>
-        <servlet-name>Controlador</servlet-name>
+        <servlet-name>Controlador_Usuario</servlet-name>
         <servlet-class>Controlador.Controlador_Usuario</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Controlador_Notificacion</servlet-name>
+        <servlet-class>Controlador.Controlador_Notificacion</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Controlador_Inicio_Sesion</servlet-name>
+        <servlet-class>Controlador.Controlador_Inicio_Sesion</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Controlador_Clase</servlet-name>
+        <servlet-class>Controlador.Controlador_Clase</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>Controlador_Asignatura</servlet-name>
@@ -57,10 +69,6 @@
         <servlet-class>Controlador.Controlador_Registro</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>Controlador_Respuesta</servlet-name>
-        <servlet-class>Controlador.Controlador_Respuesta</servlet-class>
-    </servlet>
-    <servlet>
         <servlet-name>Controlador_Rol</servlet-name>
         <servlet-class>Controlador.Controlador_Rol</servlet-class>
     </servlet>
@@ -68,22 +76,6 @@
         <servlet-name>Controlador_Turno</servlet-name>
         <servlet-class>Controlador.Controlador_Turno</servlet-class>
     </servlet>
-    <servlet>
-        <servlet-name>Controlador_Index</servlet-name>
-        <servlet-class>Controlador.Controlador_Index</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>Login</servlet-name>
-        <servlet-class>Controlador.Controlador_Login</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>Controlador_Login</servlet-name>
-        <servlet-class>Controlador.Controlador_Login</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>Controlador</servlet-name>
-        <url-pattern>/Controlador</url-pattern>
-    </servlet-mapping>
     <servlet-mapping>
         <servlet-name>Controlador_Asignatura</servlet-name>
         <url-pattern>/Controlador_Asignatura</url-pattern>
@@ -137,10 +129,6 @@
         <url-pattern>/Controlador_Registro</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>Controlador_Respuesta</servlet-name>
-        <url-pattern>/Controlador_Respuesta</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
         <servlet-name>Controlador_Rol</servlet-name>
         <url-pattern>/Controlador_Rol</url-pattern>
     </servlet-mapping>
@@ -149,17 +137,13 @@
         <url-pattern>/Controlador_Turno</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>Controlador_Index</servlet-name>
-        <url-pattern>/Controlador_Index</url-pattern>
+        <servlet-name>Controlador_Usuario</servlet-name>
+        <url-pattern>/Controlador_Usuario</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>Login</servlet-name>
-        <url-pattern>/Login</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>Controlador_Login</servlet-name>
-        <url-pattern>/Controlador_Login</url-pattern>
-    </servlet-mapping>
+        <servlet-name>Controlador_Inicio_Sesion</servlet-name>
+        <url-pattern>/Controlador_Inicio_Sesion</url-pattern>
+    </servlet-mapping>  
     <session-config>
         <session-timeout>
             30

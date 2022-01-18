@@ -1,6 +1,6 @@
 package ModeloDAO;
 
-import Config.conexion;
+import Config.Conexion;
 import Modelo.Usuario;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -11,7 +11,7 @@ import Interfaces.CRUD_Usuario;
 
 public class UsuarioDAO implements CRUD_Usuario {
 
-    conexion cn = new conexion();
+    Conexion cn = new Conexion();
     Connection con;
     PreparedStatement ps;
     ResultSet rs;
